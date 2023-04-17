@@ -1,7 +1,9 @@
-export interface Patience {
-  firstName: string,
-  lastName: string,
-  age: number,
-  patology?: string,
-  cretedAd?: Date
+import { Document } from "mongoose"
+
+export interface Patience extends Document{
+  readonly firstName: string,
+  readonly lastName: string,
+  readonly age: number,
+  readonly patology?: string,
+  readonly cretedAd?: Date
 }
